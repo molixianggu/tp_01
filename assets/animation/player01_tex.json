@@ -1,0 +1,272 @@
+{
+    "width": 256,
+    "height": 256,
+    "name": "player01",
+    "imagePath": "player01_tex.png",
+    "SubTexture": [
+        {
+            "frameHeight": 80,
+            "y": 119,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 28,
+            "frameY": -16,
+            "height": 64,
+            "name": "player-00-1",
+            "x": 98
+        },
+        {
+            "frameHeight": 80,
+            "y": 185,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 28,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-2",
+            "x": 137
+        },
+        {
+            "frameHeight": 80,
+            "y": 61,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 28,
+            "frameY": -18,
+            "height": 62,
+            "name": "player-00-3",
+            "x": 156
+        },
+        {
+            "frameHeight": 80,
+            "y": 185,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 28,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-14",
+            "x": 107
+        },
+        {
+            "frameHeight": 80,
+            "y": 56,
+            "frameWidth": 80,
+            "frameX": -28,
+            "width": 30,
+            "frameY": -19,
+            "height": 61,
+            "name": "player-00-11",
+            "x": 75
+        },
+        {
+            "frameHeight": 80,
+            "y": 190,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 29,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-16",
+            "x": 69
+        },
+        {
+            "frameHeight": 80,
+            "y": 125,
+            "frameWidth": 80,
+            "frameX": -27,
+            "width": 27,
+            "frameY": -16,
+            "height": 64,
+            "name": "player-00-13",
+            "x": 167
+        },
+        {
+            "frameHeight": 80,
+            "y": 191,
+            "frameWidth": 80,
+            "frameX": -29,
+            "width": 27,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-10",
+            "x": 196
+        },
+        {
+            "frameHeight": 80,
+            "y": 192,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 32,
+            "frameY": -18,
+            "height": 62,
+            "name": "player-00-15",
+            "x": 1
+        },
+        {
+            "frameHeight": 80,
+            "y": 1,
+            "frameWidth": 80,
+            "frameX": -28,
+            "width": 26,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-12",
+            "x": 188
+        },
+        {
+            "frameHeight": 80,
+            "y": 191,
+            "frameWidth": 80,
+            "frameX": -27,
+            "width": 27,
+            "frameY": -16,
+            "height": 64,
+            "name": "player-00-9",
+            "x": 167
+        },
+        {
+            "frameHeight": 80,
+            "y": 191,
+            "frameWidth": 80,
+            "frameX": -28,
+            "width": 27,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-19",
+            "x": 225
+        },
+        {
+            "frameHeight": 80,
+            "y": 66,
+            "frameWidth": 80,
+            "frameX": -27,
+            "width": 28,
+            "frameY": -23,
+            "height": 57,
+            "name": "player-00-21",
+            "x": 186
+        },
+        {
+            "frameHeight": 80,
+            "y": 56,
+            "frameWidth": 80,
+            "frameX": -26,
+            "width": 30,
+            "frameY": -17,
+            "height": 63,
+            "name": "player-00-22",
+            "x": 43
+        },
+        {
+            "frameHeight": 80,
+            "y": 1,
+            "frameWidth": 80,
+            "frameX": -27,
+            "width": 31,
+            "frameY": -23,
+            "height": 57,
+            "name": "player-00-18",
+            "x": 107
+        },
+        {
+            "frameHeight": 80,
+            "y": 63,
+            "frameWidth": 80,
+            "frameX": -19,
+            "width": 40,
+            "frameY": -21,
+            "height": 59,
+            "name": "player-00-20",
+            "x": 1
+        },
+        {
+            "frameHeight": 80,
+            "y": 1,
+            "frameWidth": 80,
+            "frameX": -19,
+            "width": 40,
+            "frameY": -20,
+            "height": 60,
+            "name": "player-00-17",
+            "x": 1
+        },
+        {
+            "frameHeight": 80,
+            "y": 121,
+            "frameWidth": 80,
+            "frameX": -28,
+            "width": 28,
+            "frameY": -12,
+            "height": 67,
+            "name": "player-00-26",
+            "x": 68
+        },
+        {
+            "frameHeight": 80,
+            "y": 1,
+            "frameWidth": 80,
+            "frameX": -22,
+            "width": 30,
+            "frameY": -22,
+            "height": 58,
+            "name": "player-00-25",
+            "x": 156
+        },
+        {
+            "frameHeight": 80,
+            "y": 60,
+            "frameWidth": 80,
+            "frameX": -30,
+            "width": 26,
+            "frameY": -12,
+            "height": 67,
+            "name": "player-00-27",
+            "x": 128
+        },
+        {
+            "frameHeight": 80,
+            "y": 191,
+            "frameWidth": 80,
+            "frameX": -20,
+            "width": 32,
+            "frameY": -13,
+            "height": 63,
+            "name": "player-00-28",
+            "x": 35
+        },
+        {
+            "frameHeight": 80,
+            "y": 124,
+            "frameWidth": 80,
+            "frameX": -25,
+            "width": 31,
+            "frameY": -14,
+            "height": 65,
+            "name": "player-00-29",
+            "x": 35
+        },
+        {
+            "frameHeight": 80,
+            "y": 124,
+            "frameWidth": 80,
+            "frameX": -25,
+            "width": 32,
+            "frameY": -13,
+            "height": 66,
+            "name": "player-00-30",
+            "x": 1
+        },
+        {
+            "frameHeight": 80,
+            "y": 1,
+            "frameWidth": 80,
+            "frameX": -21,
+            "width": 37,
+            "frameY": -27,
+            "height": 53,
+            "name": "player-00-31",
+            "x": 43
+        }
+    ]
+}
