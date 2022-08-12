@@ -1,0 +1,625 @@
+{
+    "frameRate": 24,
+    "name": "player01",
+    "version": "5.5",
+    "compatibleVersion": "5.5",
+    "armature": [
+        {
+            "type": "Sheet",
+            "frameRate": 6,
+            "name": "idle",
+            "aabb": {
+                "x": -40,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-1"
+                                },
+                                {
+                                    "name": "player-00-2"
+                                },
+                                {
+                                    "name": "player-00-3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 3,
+                    "playTimes": 0,
+                    "name": "idle",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                },
+                                {
+                                    "value": 2
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "idle"
+                }
+            ],
+            "canvas": {
+                "width": 80,
+                "height": 80
+            }
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 12,
+            "name": "walk",
+            "aabb": {
+                "x": -34.29,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-9",
+                                    "transform": {
+                                        "x": 5.71
+                                    }
+                                },
+                                {
+                                    "name": "player-00-10",
+                                    "transform": {
+                                        "x": 9.31,
+                                        "y": -0.12
+                                    }
+                                },
+                                {
+                                    "name": "player-00-11",
+                                    "transform": {
+                                        "x": 11.42,
+                                        "y": 0.12
+                                    }
+                                },
+                                {
+                                    "name": "player-00-12",
+                                    "transform": {
+                                        "x": 17.87
+                                    }
+                                },
+                                {
+                                    "name": "player-00-13",
+                                    "transform": {
+                                        "x": 22.34,
+                                        "y": 0.25
+                                    }
+                                },
+                                {
+                                    "name": "player-00-14",
+                                    "transform": {
+                                        "x": 26.06,
+                                        "y": 0.37
+                                    }
+                                },
+                                {
+                                    "name": "player-00-15",
+                                    "transform": {
+                                        "x": 28.05
+                                    }
+                                },
+                                {
+                                    "name": "player-00-16",
+                                    "transform": {
+                                        "x": 32.02,
+                                        "y": -0.25
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 8,
+                    "playTimes": 0,
+                    "name": "walk",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                },
+                                {
+                                    "value": 2
+                                },
+                                {
+                                    "value": 3
+                                },
+                                {
+                                    "value": 4
+                                },
+                                {
+                                    "value": 5
+                                },
+                                {
+                                    "value": 6
+                                },
+                                {
+                                    "value": 7
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "walk"
+                }
+            ]
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 12,
+            "name": "run",
+            "aabb": {
+                "x": -29.19,
+                "y": -40.37,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-17",
+                                    "transform": {
+                                        "x": 10.81,
+                                        "y": -0.37
+                                    }
+                                },
+                                {
+                                    "name": "player-00-18",
+                                    "transform": {
+                                        "x": 23.22,
+                                        "y": 0.25
+                                    }
+                                },
+                                {
+                                    "name": "player-00-19",
+                                    "transform": {
+                                        "x": 30.54
+                                    }
+                                },
+                                {
+                                    "name": "player-00-20",
+                                    "transform": {
+                                        "x": 41.09
+                                    }
+                                },
+                                {
+                                    "name": "player-00-21",
+                                    "transform": {
+                                        "x": 51.26,
+                                        "y": -0.12
+                                    }
+                                },
+                                {
+                                    "name": "player-00-22",
+                                    "transform": {
+                                        "x": 62.06
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 6,
+                    "playTimes": 0,
+                    "name": "run",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                },
+                                {
+                                    "value": 2
+                                },
+                                {
+                                    "value": 3
+                                },
+                                {
+                                    "value": 4
+                                },
+                                {
+                                    "value": 5
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "run"
+                }
+            ]
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 12,
+            "name": "jump_1",
+            "aabb": {
+                "x": -40,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "displayIndex": 1,
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-25"
+                                },
+                                {
+                                    "name": "player-00-26"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 2,
+                    "name": "jump_1",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "jump_1"
+                }
+            ]
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 8,
+            "name": "jump_2",
+            "aabb": {
+                "x": -40,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-27"
+                                },
+                                {
+                                    "name": "player-00-26"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 2,
+                    "playTimes": 0,
+                    "name": "jump_2",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "jump_2"
+                }
+            ]
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 8,
+            "name": "jump_3",
+            "aabb": {
+                "x": -40,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "displayIndex": 1,
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-28"
+                                },
+                                {
+                                    "name": "player-00-29"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 2,
+                    "playTimes": 0,
+                    "name": "jump_3",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "jump_3"
+                }
+            ]
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 8,
+            "name": "jump_4",
+            "aabb": {
+                "x": -40,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-29"
+                                },
+                                {
+                                    "name": "player-00-30"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 2,
+                    "playTimes": 0,
+                    "name": "jump_4",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "jump_4"
+                }
+            ]
+        },
+        {
+            "type": "Sheet",
+            "frameRate": 24,
+            "name": "jump_5",
+            "aabb": {
+                "x": -40,
+                "y": -40,
+                "width": 80,
+                "height": 80
+            },
+            "bone": [
+                {
+                    "name": "root"
+                }
+            ],
+            "slot": [
+                {
+                    "name": "sheetSlot",
+                    "parent": "root"
+                }
+            ],
+            "skin": [
+                {
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "display": [
+                                {
+                                    "name": "player-00-30"
+                                },
+                                {
+                                    "name": "player-00-31"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "animation": [
+                {
+                    "duration": 2,
+                    "playTimes": 0,
+                    "name": "jump_5",
+                    "slot": [
+                        {
+                            "name": "sheetSlot",
+                            "displayFrame": [
+                                {},
+                                {
+                                    "value": 1
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "defaultActions": [
+                {
+                    "gotoAndPlay": "jump_5"
+                }
+            ]
+        }
+    ]
+}
