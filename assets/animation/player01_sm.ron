@@ -1,0 +1,103 @@
+(
+    name: "player",
+    args: [
+        // 水平输入
+        FloatArg(name: "input_x", value: 0.0),
+        // 垂直速度
+        FloatArg(name: "velocity_y", value: 0.0),
+        // 是否在地面
+        BooleanArg(name: "is_ground", value: false),
+        // 是否处于战斗状态
+        BooleanArg(name: "battling", value: false),
+        // 是否触发了跳跃
+        TriggerArg(name: "jump", value: false),
+        // 被击
+        TriggerArg(name: "be_attack", value: false),
+        // 被击飞
+        TriggerArg(name: "be_attack_fly", value: false),
+    ],
+    default: "normal",
+    substatus: {
+        "normal": (
+            default: "idle",
+            content: {
+                // any
+                "": [
+                    (">be_attack_fly", "be_attack_fly"),
+                    (">be_attack", "be_attack"),
+                    (">jump", "is_ground && jump"),
+                    (">jump.jump_3", "! is_ground"),
+                    ("idle", "input_x < 0.1"),
+                    ("wlak", "input_x > 0.1 && input_x <= 0.5"),
+                    ("run", "input_x > 0.5"),
+                ],
+                "idle": [
+                    (">battling.battling_pull", "battling && is_ground"),
+                ],
+            }
+        ),
+        "jump": (
+            default: "jump_1",
+            content: {
+                "": [
+                    // 调用子状态, 但是不入栈, 直接替换当前子状态
+                    // 被击后, 不会回到 jump 状态
+                    ("-be_attack_fly", "be_attack_fly"),
+                    ("-be_attack", "be_attack"),
+                ],
+                "jump_1": [
+                    ("jump_2", "last_frame()"),
+                ],
+                "jump_2": [
+                    ("jump_3", "velocity_y <= 0.0"),
+                ],
+                "jump_3": [
+                    ("jump_4", "last_frame()"),
+                ],
+                "jump_4": [
+                    ("jump_5", "is_ground"),
+                ],
+                "jump_5": [
+                    ("<", "last_frame()"),
+                ]
+            }
+        ),
+        "battling": (
+            default: "battling_idle",
+            content: {
+                "": [
+                    (">be_attack_fly", "be_attack_fly"),
+                    (">be_attack", "be_attack"),
+                ],
+                "battling_pull": [
+                    ("battling_idle", "last_frame()"),
+                ],
+                "battling_idle": [
+                    ("put_away", "! battling"),
+                ],
+                "put_away": [
+                    ("<", "last_frame()"),
+                ],
+            }
+        ),
+        "be_attack": (
+            default: "be_attack_play",
+            content: {
+                "be_attack_play": [
+                    // 打断自身
+                    (".", "be_attack"),
+                    ("-be_attack_fly", "be_attack_fly"), 
+                    ("<", "last_frame()"),
+                ]
+            }
+        ),
+        "be_attack_fly": (
+            default: "be_attack_fly_1",
+            content: {
+                "be_attack_fly_1": [
+                    ("<", "last_frame()"),
+                ]
+            }
+        ),
+    }
+)

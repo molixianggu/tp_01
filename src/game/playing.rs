@@ -187,6 +187,13 @@ fn spawn_scene(
         z: 0.0,
     };
 
+    // let compiled = evalexpr::build_operator_tree("velocity_y < 0").unwrap();
+    // let ctx = evalexpr::context_map! {
+    //     "velocity_y" => 1.2,
+    // }
+    // .unwrap();
+    // let result = compiled.eval_with_context(&ctx).unwrap();
+
     commands
         .spawn_bundle(Camera2dBundle {
             projection: OrthographicProjection {
@@ -219,25 +226,6 @@ fn spawn_scene(
     });
 
     let n = anim.get(&ass.player01).unwrap();
-
-    // commands
-    //     .spawn()
-    //     .insert(Collider::cuboid(640.0, 10.0))
-    //     .insert_bundle(TransformBundle::from(Transform::from_xyz(0.0, -230.0, 0.0)));
-
-    // commands
-    //     .spawn()
-    //     .insert(Collider::cuboid(10.0, 230.0))
-    //     .insert_bundle(TransformBundle::from(Transform::from_xyz(
-    //         -460.0, -80.0, 0.0,
-    //     )));
-
-    // commands
-    //     .spawn()
-    //     .insert(Collider::cuboid(10.0, 230.0))
-    //     .insert_bundle(TransformBundle::from(Transform::from_xyz(
-    //         460.0, -80.0, 0.0,
-    //     )));
 
     commands
         .spawn_bundle(SpriteSheetBundle {
@@ -273,12 +261,12 @@ fn spawn_scene(
 
     commands.spawn_bundle(TextBundle {
         text: Text::from_section(
-            r#"
-                左右控制移动
-                按住 Z + 方向键 奔跑
-                空格键 跳跃
-                按住 空格键 跳的更高
-            "#,
+            format!(r#"
+            左右控制移动
+            按住 Z + 方向键 奔跑
+            空格键 跳跃
+            按住 空格键 跳的更高
+        "#),
             TextStyle {
                 font_size: 24.0,
                 font: asset_server.load("fonts/MSYH.TTF"),

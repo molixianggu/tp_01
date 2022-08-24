@@ -1,4 +1,4 @@
-#![windows_subsystem = "windows"]
+// #![windows_subsystem = "windows"]
 mod game;
 
 use bevy::{asset::AssetServerSettings, prelude::*, render::texture::ImageSettings};
@@ -12,8 +12,6 @@ fn main() {
     app.insert_resource(Msaa { samples: 1 })
         .insert_resource(ClearColor(Color::rgb(0.4, 0.4, 0.4)))
         .insert_resource(WindowDescriptor {
-            // width: 800.0,
-            // height: 480.0,
             title: "命运召唤 尔茄的精灵石".to_string(),
             canvas: Some("#main".to_string()),
             fit_canvas_to_parent: true,
@@ -26,6 +24,21 @@ fn main() {
         watch_for_changes: true,
         ..default()
     });
+    
 
     app.run();
+}
+
+mod test_op {
+    #[test]
+    fn test_exp() {
+        use evalexpr::ContextWithMutableVariables;
+
+        let compiled = evalexpr::build_operator_tree("velocity_y < 0").unwrap();
+        let mut ctx = evalexpr::HashMapContext::new();
+
+        ctx.set_value("velocity_y".into(), (-0.4).into()).unwrap();
+        let result = compiled.eval_with_context(&ctx).unwrap();
+        println!("result = {:?}", result);
+    }
 }
